@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>smart task manager</title>
+      <link rel="stylesheet" href="style.css">
+      
+</head>
+<body>
+      <script src="script.js" defer></script>
+      <main class="app">
+            <p class="eyebrow"> B-TEACH DIGITAL . PRECTICE PROJECT </p>
+            <h1>Smart Task Manager</h1>
+            <p class="muted">Small stepes consistent progress. </p>
+            <form id="taskForm">
+                  <label for="taskInput">New task</label>
+                  <div class="input-row">
+                        <input type="text" id="taskInput" placeholder=" what do you need to do" maxlength="120">
+                        <button type="submit">Add</button> 
+                  </div>
+                  <p id="message"  role="status" aria-live="polite"></p>
+            </form>
+            <div class="stats">
+                  <div><strong id="totalCount">0</strong><span>Total</span></div>
+                  <div><strong id="activeCount">0</strong><span>Active</span></div>
+                  <div><strong id="completedCount">0</strong><span>Completed</span></div>
+            </div>
+            <div class="filters" aria-label="Filter tasks">
+                  <button type="button " data-filter="all" class="filter active">All</button>
+                  <button type="button " data-filter="active" class="filter">Active</button>
+                  <button type="button " data-filter="completed" class="filter">Completed</button>
+            </div>
+            <ul id="taskList"></ul>
+            <p  id="emptyState" class="muted"> No task is yet Add your task.</p>
+            <button id="clearCompleted" class="secondary" type="button">Clear Completed</button>   
+      </main>
+
+</body>
+</html>

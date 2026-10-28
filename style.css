@@ -1,0 +1,149 @@
+*{
+      box-sizing: border-box;
+}
+body{
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px;
+      display: grid;
+      place-items: center;
+      background: #f3f5fa;
+      color: #202943;
+      font-family: Arial, Helvetica, sans-serif;
+}
+.app{
+      width: min(100%, 620px);
+      padding: 30px;
+      background: white;
+      border: 1px solid #e1e5ef;
+      border-radius: 18px;
+      box-shadow: 0 15px 45px #20294312;
+}
+.eyebrow{
+      color: #465bd8;
+      font-size: 0.75rem;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+
+}
+.muted{
+      color: #69748b;
+
+}
+#taskForm{
+      margin-top: 28px;
+}
+label{
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+}
+.input-row{
+      display: flex;
+      gap: 10px;
+}
+input{
+      flex: 1;
+      min-width: 0;
+      padding: 12px;
+      border: 1px solid #d6dbea;
+      border-radius: 8px;
+
+}
+button{
+      padding: 11px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #465bd8;
+      color: white;
+      cursor: pointer;
+}
+button:hover{
+      filter: brightness(0.29);
+}
+#message{
+      min-height: 20px;
+      color: #b42318;
+      font-size: 0.9rem;
+}
+.stats{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 12px;
+      margin: 20px 0;
+}
+.stats div{
+      display: grid;
+      gap: 5px;
+      padding: 14px;
+      background: #f4f6fb;
+      border-radius: 10px;
+
+}
+.stats strong{
+      font-size: 1.5rem;
+}
+.stats span{
+      color: #69748b;
+      font-size: 0.85rem;
+
+} 
+.filters{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+
+} 
+
+.filters .filter{
+      background: #edf0f8;
+      color: #202943;
+
+}
+.filters .filter.active{
+      background: #465bd8;
+      color: white;
+}
+#taskList{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+.task{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 0;
+      border-bottom: 1px solid #edf0f5;
+
+}
+.task-name{
+      flex: 1;
+      overflow-wrap: anywhere;
+
+}
+.task.completed .task-name{
+      text-decoration: line-through;
+      color: #8790a2;
+
+}
+.task  .deleted{
+      background: #fff0ef;
+      color: #b42318;
+}
+.secondary{
+      margin-top: 20px;
+      background: #edf0f8;
+      color: #202943;
+
+}
+@media(max-width:450px){
+      .app{
+            padding: 20px;
+
+      }
+      .input-row{
+            flex-direction: column;
+      }
+}
