@@ -16,7 +16,7 @@ Live link will be added after vercel deploy
 - Vanilla JavaScript
  
  ### Developer
- ** B-Tech Digital
+ **B-Tech Digital**
 - Github: https://github.com/tech-digi435
 ### How To Use
 1. Add Task
