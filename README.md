@@ -15,10 +15,10 @@ Live link will be added after vercel deploy
 - CSS3
 - Vanilla JavaScript
  
- ###Developer
- **B-Tech Digital
+ ### Developer
+ ** B-Tech Digital
 - Github: https://github.com/tech-digi435
-###How To Use
+### How To Use
 1. Add Task
 2. click Add
 3. Filter and manage tasks       
